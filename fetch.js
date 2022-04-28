@@ -14,9 +14,9 @@ const studentObj = JSON.parse(studentJSON);
 
 
 //2. fetch
-fetch('url')
-    .then(res => res.json())
-    .then(data => console.log(data));
+// fetch('url')
+//     .then(res => res.json())
+//     .then(data => console.log(data));
 
 // keys, values
 const keys = Object.keys(student);
@@ -47,3 +47,4 @@ const newProducts = [...products, newProduct];
 // create a new array without one specific item 
 // remove phone means create a new array without the phone
 const remaining = products.filter(p => p.name !== 'phone');
+console.log(remaining);
